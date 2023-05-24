@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "light.html#qui-sommes-nous",
+    "href": "light.html#qui-sommes-nous",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Qui sommes nous ?",
+    "text": "Qui sommes nous ?\nLa DIIT\n\nDIIT (Division Innovation et Instruction Technique)\ndéveloppement du projet de plateforme datascience Onyxia et gestion de l’instance SSP Cloud\naccompagnement de projets open-data\ndiffusion des bonnes pratiques\n\ninnovation at insee dot fr, romain.avouac at insee dot fr"
+  },
+  {
+    "objectID": "light.html#qui-sommes-nous-1",
+    "href": "light.html#qui-sommes-nous-1",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Qui sommes nous ?",
+    "text": "Qui sommes nous ?\nLe SSP Lab\n\nLab data science de l’INSEE\nExploration nouvelles sources, nouvelles méthodes, etc.\nTravail en lien avec équipes métiers\nRéseau data scientists de la statistique publique: https://ssphub.netlify.app/\n\nlino.galiana at insee dot fr, ssphub-contact at insee dot fr"
+  },
+  {
+    "objectID": "light.html#pourquoi-onyxia",
+    "href": "light.html#pourquoi-onyxia",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Pourquoi Onyxia ?",
+    "text": "Pourquoi Onyxia ?\n\nL’infrastructure est souvent un frein à l’innovation\nMutualisation d’une infrastructure, de services et de connaissances"
+  },
+  {
+    "objectID": "light.html#grands-principes",
+    "href": "light.html#grands-principes",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Grands principes",
+    "text": "Grands principes\n\nUn service de stockage distribué de données sous forme d’objets (S3)\nUne infrastructure cloud-native, basée sur un orchestrateur de conteneurs (Kubernetes)\nUn catalogue de services couvrant l’ensemble du cycle de vie des projets de data science, du libre service à la mise en production"
+  },
+  {
+    "objectID": "light.html#catalogue-de-services",
+    "href": "light.html#catalogue-de-services",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Catalogue de services",
+    "text": "Catalogue de services"
+  },
+  {
+    "objectID": "light.html#le-ssp-cloud",
+    "href": "light.html#le-ssp-cloud",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Le SSP Cloud",
+    "text": "Le SSP Cloud\n\nInstance du projet Onyxia hébergée à l’Insee\nDes ressources dimensionnées pour la data science (RAM, CPU, GPU)\nUne plateforme qui vous est ouverte !\nAuto-formation aux grands principes des architectures modernes de data science"
+  },
+  {
+    "objectID": "light.html#le-ssp-cloud-1",
+    "href": "light.html#le-ssp-cloud-1",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Le SSP Cloud",
+    "text": "Le SSP Cloud\nPrincipe de base:"
+  },
+  {
+    "objectID": "light.html#le-ssp-cloud-2",
+    "href": "light.html#le-ssp-cloud-2",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Le SSP Cloud",
+    "text": "Le SSP Cloud\nPour aller plus loin:"
+  },
+  {
+    "objectID": "light.html#fonctionnement",
+    "href": "light.html#fonctionnement",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Fonctionnement",
+    "text": "Fonctionnement"
+  },
+  {
+    "objectID": "light.html#avantages",
+    "href": "light.html#avantages",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Avantages",
+    "text": "Avantages\n\nStockage cloud : élastique et donc plus économique\nPortabilité : les objets sont mis à disposition via une API web\nDécouplage du stockage et du moteur de calcul"
+  },
+  {
+    "objectID": "light.html#pourquoi-les-conteneurs",
+    "href": "light.html#pourquoi-les-conteneurs",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Pourquoi les conteneurs ?",
+    "text": "Pourquoi les conteneurs ?\n\nObjectif : encapsuler une application et tout ce dont elle a besoin afin de la déployer facilement"
+  },
+  {
+    "objectID": "light.html#avantage-des-conteneurs",
+    "href": "light.html#avantage-des-conteneurs",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Avantage des conteneurs",
+    "text": "Avantage des conteneurs\n\nLégèreté : ils n’incluent que le strict nécessaire au fonctionnement de l’application\nPortabilité : il est très facile de passer d’un environnement d’exécution à un autre\nReproductibilité : l’application s’exécute de la même manière quel que soit l’environnement sur lequel il est déployé"
+  },
+  {
+    "objectID": "light.html#pourquoi-lorchestration",
+    "href": "light.html#pourquoi-lorchestration",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Pourquoi l’orchestration ?",
+    "text": "Pourquoi l’orchestration ?\n\nDéploiements reproductibles et automatisés\nAdapter les ressources (scaler) selon les besoins\nMonitoring de l’état de santé des applications"
+  },
+  {
+    "objectID": "light.html#fonctionnement-de-kubernetes",
+    "href": "light.html#fonctionnement-de-kubernetes",
+    "title": "Utilisation d’Onyxia pour la formation",
+    "section": "Fonctionnement de Kubernetes",
+    "text": "Fonctionnement de Kubernetes"
+  }
+]
