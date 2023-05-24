@@ -89,8 +89,24 @@ dans un environnement normalisé via un service web:
 - Consignes mais pas solutions apparentes
     + Exercices guidés
     + Affiche le `DataFrame` solution (merci `Quarto`!) mais pas le code pour l'obtenir
+    + Système d'aide et de suggestion à améliorer 
 
-- Système d'aide et de suggestion à améliorer 
+
+<div class="alert alert-success" role="alert" style="color: rgba(0,0,0,.8); background-color: white; margin-top: 1em; margin-bottom: 1em; margin:1.5625emauto; padding:0 .6rem .8rem!important;overflow:hidden; page-break-inside:avoid; border-radius:.25rem; box-shadow:0 .2rem .5rem rgba(0,0,0,.05),0 0 .05rem rgba(0,0,0,.1); transition:color .25s,background-color .25s,border-color .25s ; border-right: 1px solid #dee2e6 ; border-top: 1px solid #dee2e6 ; border-bottom: 1px solid #dee2e6 ; border-left:.2rem solid #3fb618;">
+<h3 class="alert-heading"><i class="fa fa-pencil"></i> Exercice 1: Afficher des données</h3>
+
+L’objectif de cet exercice est de vous amener à afficher des informations sur les données dans un bloc de code (notebook) ou dans la console
+
+Commencer sur `df`:
+
+1.  Utiliser les méthodes adéquates pour les 10 premières valeurs, les 15 dernières et un échantillon aléatoire de 10 valeurs
+2.  Tirer 5 pourcent de l’échantillon sans remise
+3.  Ne conserver que les 10 premières lignes et tirer aléatoirement dans celles-ci pour obtenir un DataFrame de 100 données.
+4.  Faire 100 tirages à partir des 6 premières lignes avec une probabilité de 1/2 pour la première observation et une probabilité uniforme pour les autres
+5.  Faire la même chose sur `df_city`.
+
+</div>
+
 
 
 
