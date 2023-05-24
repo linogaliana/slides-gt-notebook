@@ -1,7 +1,7 @@
 ---
-title: La plateforme Onyxia
+title: Utilisation d'Onyxia pour la formation
 subtitle: |
-  **[Un environnement de data science à l'état de l'art]{.orange}**
+  **[Un exemple d'utilisation avec le cours de `Python`]{.orange}**
 author: Romain Avouac et [Lino Galiana](https://www.linogaliana.fr/)
 # date: 
 slide-number: true
