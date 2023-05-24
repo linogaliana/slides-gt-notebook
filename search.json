@@ -25,7 +25,7 @@
     "href": "light.html#approche-pédagogique-22",
     "title": "Utilisation d’Onyxia pour la formation",
     "section": "Approche pédagogique (2/2)",
-    "text": "Approche pédagogique (2/2)\n\nBoites pour identifier les exercices\nConsignes mais pas solutions apparentes\n\nExercices guidés\nAffiche le DataFrame solution (merci Quarto!) mais pas le code pour l’obtenir\n\nSystème d’aide et de suggestion à améliorer"
+    "text": "Approche pédagogique (2/2)\n\nBoites pour identifier les exercices\nConsignes mais pas solutions apparentes\n\nExercices guidés\nAffiche le DataFrame solution (merci Quarto!) mais pas le code pour l’obtenir\nSystème d’aide et de suggestion à améliorer\n\n\n\n\n Exercice 1: Afficher des données\n\nL’objectif de cet exercice est de vous amener à afficher des informations sur les données dans un bloc de code (notebook) ou dans la console\nCommencer sur df:\n\nUtiliser les méthodes adéquates pour les 10 premières valeurs, les 15 dernières et un échantillon aléatoire de 10 valeurs\nTirer 5 pourcent de l’échantillon sans remise\nNe conserver que les 10 premières lignes et tirer aléatoirement dans celles-ci pour obtenir un DataFrame de 100 données.\nFaire 100 tirages à partir des 6 premières lignes avec une probabilité de 1/2 pour la première observation et une probabilité uniforme pour les autres\nFaire la même chose sur df_city."
   },
   {
     "objectID": "light.html#démonstration-1",
