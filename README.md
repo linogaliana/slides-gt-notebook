@@ -1,3 +1,2 @@
-# ensai-seminaire-bigdata-part1
+# Slides
 
-Partie 1: présentation onyxia
