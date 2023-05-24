@@ -1,12 +1,11 @@
 ---
 title: Utilisation d'Onyxia pour la formation
 subtitle: |
-  **[Un exemple d'utilisation avec le cours de `Python`]{.orange}**
-author: Romain Avouac et [Lino Galiana](https://www.linogaliana.fr/)
-# date: 
+  **[Un exemple d'utilisation avec un cours de `Python`]{.orange}**
+author: [Lino Galiana](https://www.linogaliana.fr/)
 slide-number: true
 footer: |
-  Présentation à l'ENSAI
+  Présentation GT notebook
 # uncomment for French presentations:
 lang: fr-FR
 # for blind readers:
@@ -27,119 +26,21 @@ from: markdown+emoji
 ---
 
 
-## Qui sommes nous ?
+## Contexte
 
-### La DIIT
+- Site web est un bon point d'entrée mais...
 
-- DIIT (Division Innovation et Instruction Technique)
+- ... notebook `Jupyter` plus pratique pour apprendre
 
-- développement du projet de plateforme datascience [Onyxia](https://github.com/InseeFrLab/onyxia) et gestion de l'instance [SSP Cloud](https://datalab.sspcloud.fr)
+...
 
-- accompagnement de projets open-data
+- Mais compliqué de gérer autant d'installations que d'élèves
 
-- diffusion des bonnes pratiques
+...
 
-<innovation@insee.fr>, <romain.avouac@insee.fr>
+- Solution: mise à disposition de notebooks par service web
 
-
-## Qui sommes nous ?
-
-### Le SSP Lab
-
-- Lab _data science_ de l'INSEE
-
-- Exploration nouvelles sources, nouvelles méthodes, etc.
-
-- Travail en lien avec équipes métiers
-
-- Réseau data scientists de la statistique publique: [https://ssphub.netlify.app/](https://ssphub.netlify.app/)
-
-<lino.galiana@insee.fr>, <ssphub-contact@insee.fr>
-
-
-# Présentation d'Onyxia
-
-## Pourquoi Onyxia ?
-
-- L'infrastructure est souvent un **frein à l'innovation**
-
-- **Mutualisation** d'une infrastructure, de services et de connaissances
-
-## Grands principes
-
-- Un service de **stockage distribué** de données sous forme d'**objets** (S3)
-
-- Une infrastructure cloud-native, basée sur un **orchestrateur de conteneurs** (Kubernetes)
-
-- Un catalogue de services couvrant l'ensemble du **cycle de vie** des projets de data science, du libre service à la **mise en production**
-
-## Catalogue de services
-
-![](img/catalogue.png)
-
-## Le SSP Cloud
-
-- **Instance** du projet Onyxia hébergée à l'Insee
-
-- Des **ressources** dimensionnées pour la data science (RAM, CPU, GPU)
-
-- Une plateforme qui vous est **ouverte** !
-
-- **Auto-formation** aux grands principes des architectures modernes de data science
-
-## Le SSP Cloud
-
-Principe de base:
-
-![](https://ensae-reproductibilite.github.io/website/workflow2.png)
-
-## Le SSP Cloud
-
-[Pour aller plus loin](https://ssphub.netlify.app/post/onyxia/):
-
-![](img/ssphub.png)
-
-# Le stockage objet
-
-## Fonctionnement
-
-![](img/minio.png)
-
-## Avantages
-
-- **Stockage cloud** : élastique et donc plus économique
-
-- **Portabilité** : les objets sont mis à disposition via une API web
-
-- **Découplage** du stockage et du moteur de calcul
-
-# L'orchestration de conteneurs
-
-## Pourquoi les conteneurs ?
-
-- **Objectif** : encapsuler une application et tout ce dont elle a besoin afin de la **déployer** facilement
-
-![](img/server-vm-container.png)
-
-## Avantage des conteneurs
-
-- **Légèreté** : ils n'incluent que le strict nécessaire au fonctionnement de l'application
-
-- **Portabilité** : il est très facile de passer d'un environnement d'exécution à un autre
-
-- **Reproductibilité** : l'application s'exécute de la même manière quel que soit l'environnement sur lequel il est déployé
-
-## Pourquoi l'orchestration ?
-
-- Déploiements **reproductibles** et **automatisés**
-
-- Adapter les ressources (**scaler**) selon les besoins
-
-- **Monitoring** de l'état de santé des applications
-
-## Fonctionnement de Kubernetes
-
-![](img/kubernetes-archi.png)
-
+    + Colab ? ❌
+    + SSP Cloud / Onyxia ✅
 
 # Démonstration 🚀
