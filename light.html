@@ -10,7 +10,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.353">
 
-  <meta name="author" content="Romain Avouac et Lino Galiana">
+  <meta name="author" content="Lino Galiana">
   <title>Utilisation d’Onyxia pour la formation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -331,158 +331,107 @@
 
 <section id="title-slide" data-background-image="site_libs/quarto-contrib/quarto-project/InseeFrLab/onyxia/background.svg" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Utilisation d’Onyxia pour la formation</h1>
-  <p class="subtitle"></p><p><strong><span class="orange">Un exemple d’utilisation avec le cours de <code>Python</code></span></strong></p><p></p>
+  <p class="subtitle"></p><p><strong><span class="orange">Un exemple d’utilisation avec un cours de <code>Python</code></span></strong></p><p></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Romain Avouac et <a href="https://www.linogaliana.fr/">Lino Galiana</a> 
+Lino Galiana 
 </div>
 </div>
 </div>
 
 </section>
-<section id="qui-sommes-nous" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Qui sommes nous ?</h2>
-<h3 data-background-image="background.svg" data-background-size="contain" id="la-diit">La DIIT</h3>
+<section id="contexte" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Contexte</h2>
+<p><br><br></p>
 <ul>
-<li><p>DIIT (Division Innovation et Instruction Technique)</p></li>
-<li><p>développement du projet de plateforme datascience <a href="https://github.com/InseeFrLab/onyxia">Onyxia</a> et gestion de l’instance <a href="https://datalab.sspcloud.fr">SSP Cloud</a></p></li>
-<li><p>accompagnement de projets open-data</p></li>
-<li><p>diffusion des bonnes pratiques</p></li>
+<li>Cours 2e année ENSAE (M1), Python pour la <em>data science</em>:
+<ul>
+<li>Introduction pratique à la <em>data science</em></li>
+<li>Tout sur open-data</li>
+<li>Tous les supports sur <a href="https://github.com/linogaliana/python-datascientist"><code>Github</code></a></li>
+<li>Site web <a href="https://pythonds.linogaliana.fr/">pythonds.linogaliana.fr/</a></li>
+</ul></li>
 </ul>
-<p><script type="text/javascript">
-<!--
-h='&#x69;&#110;&#x73;&#x65;&#x65;&#46;&#102;&#114;';a='&#64;';n='&#x69;&#110;&#110;&#x6f;&#118;&#x61;&#116;&#x69;&#x6f;&#110;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>innovation at insee dot fr</noscript>, <script type="text/javascript">
-<!--
-h='&#x69;&#110;&#x73;&#x65;&#x65;&#46;&#102;&#114;';a='&#64;';n='&#114;&#x6f;&#x6d;&#x61;&#x69;&#110;&#46;&#x61;&#118;&#x6f;&#x75;&#x61;&#x63;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>romain.avouac at insee dot fr</noscript></p>
 </section>
-<section id="qui-sommes-nous-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Qui sommes nous ?</h2>
-<h3 data-background-image="background.svg" data-background-size="contain" id="le-ssp-lab">Le SSP Lab</h3>
+<section id="contexte-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Contexte</h2>
 <ul>
-<li><p>Lab <em>data science</em> de l’INSEE</p></li>
-<li><p>Exploration nouvelles sources, nouvelles méthodes, etc.</p></li>
-<li><p>Travail en lien avec équipes métiers</p></li>
-<li><p>Réseau data scientists de la statistique publique: <a href="https://ssphub.netlify.app/">https://ssphub.netlify.app/</a></p></li>
+<li>Site web <a href="https://pythonds.linogaliana.fr/">pythonds.linogaliana.fr/</a> est un bon point d’entrée mais…</li>
+<li>… <em>Notebook</em> <code>Jupyter</code> plus pratique pour apprendre ✏️</li>
 </ul>
-<p><script type="text/javascript">
-<!--
-h='&#x69;&#110;&#x73;&#x65;&#x65;&#46;&#102;&#114;';a='&#64;';n='&#108;&#x69;&#110;&#x6f;&#46;&#x67;&#x61;&#108;&#x69;&#x61;&#110;&#x61;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>lino.galiana at insee dot fr</noscript>, <script type="text/javascript">
-<!--
-h='&#x69;&#110;&#x73;&#x65;&#x65;&#46;&#102;&#114;';a='&#64;';n='&#x73;&#x73;&#112;&#104;&#x75;&#98;&#x2d;&#x63;&#x6f;&#110;&#116;&#x61;&#x63;&#116;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail email">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>ssphub-contact at insee dot fr</noscript></p>
+<div class="fragment">
+<ul>
+<li>Compliqué de gérer autant d’installations que d’élèves 🤔</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Solution💡: mise à disposition de notebooks dans un environnement normalisé via un service web:</p>
+<ul>
+<li><code>Colab</code> ? ❌</li>
+<li><code>SSPCloud</code> / <code>Onyxia</code> ✅</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="approche-pédagogique-12" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Approche pédagogique (1/2)</h2>
+<ul>
+<li>Notebook standardisé accessible en un lien cliquable</li>
+</ul>
+<p class="badges">
+<a href="https://github.com/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" class="github"><i class="fab fa-github"></i></a> <a href="https://downgit.github.io/#/home?url=https://github.com/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Download-Notebook-important?logo=Jupyter" alt="Download"></a> <a href="https://nbviewer.jupyter.org/github/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Visualize-nbviewer-blue?logo=Jupyter" alt="nbviewer"></a> <a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%ABpython-datascience%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-jupyter.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002a_pandas_tutorial%C2%BB&amp;security.allowlist.enabled=false" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a><br> <a href="https://mybinder.org/v2/gh/linogaliana/python-datascientist/master?filepath={binder_path}" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Launch-Binder-E66581.svg?logo=data:image/png;base64,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" alt="Binder"></a> <a href="http://colab.research.google.com/github/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://github.dev/linogaliana/python-datascientist/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://img.shields.io/static/v1?logo=visualstudiocode&amp;label=&amp;message=Open%20in%20Visual%20Studio%20Code&amp;labelColor=2c2c32&amp;color=007acc&amp;logoColor=007acc" alt="githubdev"></a>
+</p>
+<div class="fragment">
+<ul>
+<li>Disponible aussi sur un portail de formation dédié sur <a href="https://www.sspcloud.fr/formation">sspcloud.fr/formation</a></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Exactement même contenu que le site web (merci <code>Quarto</code>!)</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Acculturer par la pratique aux environnements :
+<ul>
+<li>Une bonne partie des <em>packages</em> utiles en début de parcours pré-installés</li>
+<li>Puis certains packages à installer par les élèves via <code>pip</code> (<code>conda</code> expliqué dans un <a href="https://ensae-reproductibilite.github.io/website/">cours plus avancé</a>)</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="approche-pédagogique-22" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Approche pédagogique (2/2)</h2>
+<ul>
+<li><p>Boites pour identifier les exercices</p></li>
+<li><p>Consignes mais pas solutions apparentes</p>
+<ul>
+<li>Exercices guidés</li>
+<li>Affiche le <code>DataFrame</code> solution (merci <code>Quarto</code>!) mais pas le code pour l’obtenir</li>
+</ul></li>
+<li><p>Système d’aide et de suggestion à améliorer</p></li>
+</ul>
 </section>
 <section>
-<section id="présentation-donyxia" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Présentation d’Onyxia</h1>
-
-</section>
-<section id="pourquoi-onyxia" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Pourquoi Onyxia ?</h2>
-<ul>
-<li><p>L’infrastructure est souvent un <strong>frein à l’innovation</strong></p></li>
-<li><p><strong>Mutualisation</strong> d’une infrastructure, de services et de connaissances</p></li>
-</ul>
-</section>
-<section id="grands-principes" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Grands principes</h2>
-<ul>
-<li><p>Un service de <strong>stockage distribué</strong> de données sous forme d’<strong>objets</strong> (S3)</p></li>
-<li><p>Une infrastructure cloud-native, basée sur un <strong>orchestrateur de conteneurs</strong> (Kubernetes)</p></li>
-<li><p>Un catalogue de services couvrant l’ensemble du <strong>cycle de vie</strong> des projets de data science, du libre service à la <strong>mise en production</strong></p></li>
-</ul>
-</section>
-<section id="catalogue-de-services" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Catalogue de services</h2>
-
-<img data-src="img/catalogue.png" class="r-stretch"></section>
-<section id="le-ssp-cloud" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Le SSP Cloud</h2>
-<ul>
-<li><p><strong>Instance</strong> du projet Onyxia hébergée à l’Insee</p></li>
-<li><p>Des <strong>ressources</strong> dimensionnées pour la data science (RAM, CPU, GPU)</p></li>
-<li><p>Une plateforme qui vous est <strong>ouverte</strong> !</p></li>
-<li><p><strong>Auto-formation</strong> aux grands principes des architectures modernes de data science</p></li>
-</ul>
-</section>
-<section id="le-ssp-cloud-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Le SSP Cloud</h2>
-<p>Principe de base:</p>
-
-<img data-src="https://ensae-reproductibilite.github.io/website/workflow2.png" class="r-stretch"></section>
-<section id="le-ssp-cloud-2" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Le SSP Cloud</h2>
-<p><a href="https://ssphub.netlify.app/post/onyxia/">Pour aller plus loin</a>:</p>
-
-<img data-src="img/ssphub.png" class="r-stretch"></section></section>
-<section>
-<section id="le-stockage-objet" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Le stockage objet</h1>
-
-</section>
-<section id="fonctionnement" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Fonctionnement</h2>
-
-<img data-src="img/minio.png" class="r-stretch"></section>
-<section id="avantages" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Avantages</h2>
-<ul>
-<li><p><strong>Stockage cloud</strong> : élastique et donc plus économique</p></li>
-<li><p><strong>Portabilité</strong> : les objets sont mis à disposition via une API web</p></li>
-<li><p><strong>Découplage</strong> du stockage et du moteur de calcul</p></li>
-</ul>
-</section></section>
-<section>
-<section id="lorchestration-de-conteneurs" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>L’orchestration de conteneurs</h1>
-
-</section>
-<section id="pourquoi-les-conteneurs" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Pourquoi les conteneurs ?</h2>
-<ul>
-<li><strong>Objectif</strong> : encapsuler une application et tout ce dont elle a besoin afin de la <strong>déployer</strong> facilement</li>
-</ul>
-
-<img data-src="img/server-vm-container.png" class="r-stretch"></section>
-<section id="avantage-des-conteneurs" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Avantage des conteneurs</h2>
-<ul>
-<li><p><strong>Légèreté</strong> : ils n’incluent que le strict nécessaire au fonctionnement de l’application</p></li>
-<li><p><strong>Portabilité</strong> : il est très facile de passer d’un environnement d’exécution à un autre</p></li>
-<li><p><strong>Reproductibilité</strong> : l’application s’exécute de la même manière quel que soit l’environnement sur lequel il est déployé</p></li>
-</ul>
-</section>
-<section id="pourquoi-lorchestration" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Pourquoi l’orchestration ?</h2>
-<ul>
-<li><p>Déploiements <strong>reproductibles</strong> et <strong>automatisés</strong></p></li>
-<li><p>Adapter les ressources (<strong>scaler</strong>) selon les besoins</p></li>
-<li><p><strong>Monitoring</strong> de l’état de santé des applications</p></li>
-</ul>
-</section>
-<section id="fonctionnement-de-kubernetes" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Fonctionnement de Kubernetes</h2>
-
-<img data-src="img/kubernetes-archi.png" class="r-stretch"></section></section>
 <section id="démonstration" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Démonstration 🚀</h1>
 
-<div class="footer footer-default">
-<p>Présentation à l’ENSAI</p>
-</div>
 </section>
+<section id="démonstration-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Démonstration 🚀</h2>
+<ul>
+<li>https://pythonds.linogaliana.fr/pandas/</li>
+<li>https://www.sspcloud.fr/formation</li>
+</ul>
+
+<div class="footer footer-default">
+<p>Présentation GT notebook</p>
+</div>
+</section></section>
     </div>
   </div>
 
